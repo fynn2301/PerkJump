@@ -15,16 +15,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position += new Vector3(0.5f, 0, 0);
+            transform.position += new Vector3(0.1f, 0, 0);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.position += new Vector3(-0.5f, 0, 0);
+            transform.position += new Vector3(-0.1f, 0, 0);
         }
+        else
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, GetComponent<Rigidbody2D>().velocity.y, 0);
+        }
+        //__________________________________________//
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector3(0, 500, 0));
+            GetComponent<Rigidbody2D>().AddForce(new Vector3(0, 150, 0));
             Debug.Log("Jump");
         }
     }
