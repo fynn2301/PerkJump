@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InformtionFromMenu : MonoBehaviour
 {
-    public static int playerIndex = 1;
+    public static int playerIndex = 2;
 
     public void SetPlayerIndex(int index)
     {
