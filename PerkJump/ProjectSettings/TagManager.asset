@@ -38,6 +38,33 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 4244290447
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1198772917
+    locked: 0
+  - name: GreenStone
+    uniqueID: 3097482099
+    locked: 0
+  - name: Liana
+    uniqueID: 2680370915
+    locked: 0
+  - name: Playtform
+    uniqueID: 192342579
+    locked: 0
+  - name: Player
+    uniqueID: 3274949835
+    locked: 0
+  - name: PlayerEyes
+    uniqueID: 4175750223
+    locked: 0
+  - name: Weapon
+    uniqueID: 13521881
+    locked: 0
+  - name: LanternLiana
+    uniqueID: 1811753987
     locked: 0

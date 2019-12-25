@@ -35,10 +35,16 @@ public class NetworkManager : MonoBehaviour {
                 ConnectionManager.instance.PutInBufferPosition(message);
                 break;
             case 1:
-                ConnectionManager.instance.ShotEnemyStart();
+
                 break;
             case 2:
-                ConnectionManager.instance.ShotEnemyStop();
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
                 break;
             default:
                 break;
