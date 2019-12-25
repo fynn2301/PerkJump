@@ -6,6 +6,7 @@ public class BulletSpecs : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject spawnObject;
+    public float bulletVelocity;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,13 @@ public class BulletSpecs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Object shotBullet = Instantiate(bullet, spawnObject.transform.position, spawnObject.transform.rotation);
-        }
+
+    }
+
+    public void Shot()
+    {
+        GameObject shotBullet = Instantiate(bullet, spawnObject.transform.position, spawnObject.transform.rotation);
+        shotBullet.GetComponent<Rigidbody2D>().AddForce(spawnObject.transform.forward.normalized * bulletVelocity);
+        Debug.Log(spawnObject.transform.forward);
     }
 }
