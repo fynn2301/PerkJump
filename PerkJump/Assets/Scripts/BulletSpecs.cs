@@ -22,7 +22,7 @@ public class BulletSpecs : MonoBehaviour
 
     public void Shot()
     {
-        GameObject shotBullet = Instantiate(bullet, spawnObject.transform.position, spawnObject.transform.rotation);
+        GameObject shotBullet = Instantiate(bullet, spawnObject.transform.position, bullet.transform.rotation);
         shotBullet.GetComponent<Rigidbody2D>().AddForce(spawnObject.transform.forward.normalized * bulletVelocity);
         Debug.Log(spawnObject.transform.forward);
     }
